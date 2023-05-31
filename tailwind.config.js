@@ -28,6 +28,12 @@ module.exports = {
         modalDetailMobile: "21.688rem",
         modalPlayAudioDekstop: "38.313rem",
         modalPlayAudioMobile: "21.688rem",
+        qiraListCardDekstop: "17.125rem",
+        qiraListCardMobile: "18.875rem",
+      },
+      maxHeight: {
+        modalDetailDekstop: "23.375rem",
+        modalDetailMobile: "21rem",
       },
       height: {
         homepageCardDekstop: "6.25rem",
@@ -42,6 +48,8 @@ module.exports = {
         modalDetailMobile: "21rem",
         modalPlayAudioDekstop: "26.563rem",
         modalPlayAudioDekstop: "26.563rem",
+        qiraListCardDekstop: "3.25rem",
+        qiraListCardMobile: "3.25rem",
       },
     },
   },
