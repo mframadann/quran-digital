@@ -1,64 +1,45 @@
 "use client";
-import { XMarkIcon } from "@/components/icons";
+import { ContentCard } from "@/components";
+import { SearchIcon } from "@/components/icons";
 import { useState } from "react";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
   return (
     <main className="w-full h-[100vh] flex justify-center items-center transition-all duration-500">
-      {showModal && (
-        <div className="inset-0 bg-black fixed bg-opacity-20 backdrop-blur-sm px-3">
-          <div className="w-full h-full flex justify-center items-center px-4">
-            <div className=" xl:h-modalDetailDekstop xl:max-h-modalDetailDekstop xl:w-modalDetailDekstop bg-white rounded-10 box-border">
-              <div className="w-full xl:py-5 px-5 py-4 border-b-2 flex justify-between items-center">
-                <h1 className="xl:text-xl text-base">Surat Al-Fatihah</h1>
-                <div
-                  className="hover:bg-gray-200 p-2 rounded-md cursor-pointer"
-                  onClick={(): void => setShowModal(!showModal)}
-                >
-                  <XMarkIcon className="stroke-black fill-black" />
-                </div>
-              </div>
-              <div className="w-full pl-5 pr-3 pt-3 pb-4">
-                <div className="max-h-[222px] xl:max-h-[255px] overflow-y-scroll">
-                  <div className="w-full h-full text-justify md:text-left xl:text-sm text-xs flex gap-3 flex-col font-medium">
-                    <p>
-                      Surat Al Faatihah (Pembukaan) yang diturunkan di Mekah dan
-                      terdiri dari 7 ayat adalah surat yang pertama-tama
-                      diturunkan dengan lengkap diantara surat-surat yang ada
-                      dalam Al Quran dan termasuk golongan surat Makkiyyah.
-                      Surat ini disebut Al Faatihah (Pembukaan), karena dengan
-                      surat inilah dibuka dan dimulainya Al Quran.
-                    </p>
-                    <p>
-                      Dinamakan Ummul Quran (induk Al Quran) atau Ummul Kitaab
-                      (induk Al Kitaab) karena dia merupakan induk dari semua
-                      isi Al Quran, dan karena itu diwajibkan membacanya pada
-                      tiap-tiap sembahyang.
-                    </p>
-                    <p>
-                      Dinamakan pula As Sab`ul matsaany (tujuh yang
-                      berulang-ulang) karena ayatnya tujuh dan dibaca
-                      berulang-ulang dalam sholat.
-                    </p>
-                    <p>
-                      Dinamakan pula As Sab`ul matsaany (tujuh yang
-                      berulang-ulang) karena ayatnya tujuh dan dibaca
-                      berulang-ulang dalam sholat.
-                    </p>
-                  </div>
-                </div>
-              </div>
+      <div className="w-full max-w-6xl bg-secondary h-full bg- box-border p-4">
+        <div className="flex flex-col gap-12">
+          {/* Header */}
+          <div className="px-4 pt-12 box-border">
+            <div className="w-full max-w-xs flex flex-col gap-2">
+              <h1 className="text-2xl font-bold">E - Al Qur`an</h1>
+              <p className="text-sm text-ternary font-medium">
+                “Sebaik-baik kalian adalah orang yang belajar Al-Qur`an dan
+                mengajarkannya.” (HR. Tirmidzi)
+              </p>
             </div>
           </div>
+          {/* end header */}
+          {/* Search box */}
+          <div className="w-searchFormMobile h-searchFormMobile bg-white shadow-md shadow-[#7090b023] rounded-full flex px-5 items-center gap-3">
+            <SearchIcon />
+            <span className="text-xs font-medium text-ternary">
+              Surat apa yang ingin kamu baca sekarang?
+            </span>
+          </div>
+          {/* end searchbox */}
+          {/* content */}
+          <div className="grid grid-rows-1 gap-3">
+            <ContentCard />
+            <ContentCard />
+            <ContentCard />
+            <ContentCard />
+            <ContentCard />
+            <ContentCard />
+            <ContentCard />
+          </div>
+          {/* end content */}
         </div>
-      )}
-      <button
-        className="px-12 py-4 bg-primary rounded-full text-white font-bold focus:ring-4 focus:ring-primary focus:ring-opacity-40 transition-all duration-300"
-        onClick={(): void => setShowModal(!showModal)}
-      >
-        Show modal
-      </button>
+      </div>
     </main>
   );
 }

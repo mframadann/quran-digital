@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       borderRadius: {
         10: "0.625rem",
+        5: "0.313rem",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -17,6 +18,7 @@ module.exports = {
         primary: "#0ABA9A",
         secondary: "#F7F7F7",
         ternary: "#636363",
+        label: "#E3E3E3",
       },
       width: {
         homepageCardDekstop: "17.313rem",
@@ -33,6 +35,7 @@ module.exports = {
         modalPlayAudioMobile: "21.688rem",
         qiraListCardDekstop: "17.125rem",
         qiraListCardMobile: "18.875rem",
+        label: "2.224rem",
       },
       maxHeight: {
         modalDetailDekstop: "23.375rem",
@@ -53,6 +56,14 @@ module.exports = {
         modalPlayAudioDekstop: "26.563rem",
         qiraListCardDekstop: "3.25rem",
         qiraListCardMobile: "3.25rem",
+        label: "2.224rem",
+      },
+      padding: {
+        cardX: "1.125rem",
+        cardY: "1.563rem",
+      },
+      boxShadow: {
+        card: "box-shadow: 0px 4px 15px 0px;",
       },
     },
   },
