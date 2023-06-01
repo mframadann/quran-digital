@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        10: "0.625rem",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
