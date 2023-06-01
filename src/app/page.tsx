@@ -20,7 +20,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full pl-5 pr-3 pt-3 pb-4">
-                <div className="max-h-[222px] xl:max-h-[255px] overflow-y-scroll">
+                <div className="max-h-[222px] xl:max-h-[255px] overflow-y-scroll scroll-m-3 xl:scroll-m-0">
                   <div className="w-full h-full text-justify md:text-left xl:text-sm text-xs flex gap-3 flex-col font-medium">
                     <p>
                       Surat Al Faatihah (Pembukaan) yang diturunkan di Mekah dan
