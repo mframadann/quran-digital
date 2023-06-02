@@ -36,10 +36,13 @@ module.exports = {
         qiraListCardDekstop: "17.125rem",
         qiraListCardMobile: "18.875rem",
         label: "2.224rem",
+        labelQira: "1.688rem",
       },
       maxHeight: {
         modalDetailDekstop: "23.375rem",
         modalDetailMobile: "21rem",
+        modalPlayAudioMobile: "26.563rem",
+        qiraListParent: "15.625rem",
       },
       height: {
         homepageCardDekstop: "6.25rem",
@@ -53,10 +56,11 @@ module.exports = {
         modalDetailDekstop: "23.375rem",
         modalDetailMobile: "21rem",
         modalPlayAudioDekstop: "26.563rem",
-        modalPlayAudioDekstop: "26.563rem",
+        modalPlayAudioMobile: "26.563rem",
         qiraListCardDekstop: "3.25rem",
         qiraListCardMobile: "3.25rem",
         label: "2.224rem",
+        labelQira: "1.688rem",
       },
       padding: {
         cardX: "1.125rem",
