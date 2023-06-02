@@ -6,3 +6,5 @@ export type { default as ModalHeaderProps } from "./modalHeader";
 export type { default as QiraListCardProps } from "./qiraListCard";
 export type { default as QiraListProps } from "./qiraList";
 export type { default as ModalProps } from "./modalWrapper";
+export type { default as DetailHeaderCardButtonProps } from "./detailHeaderCardButton";
+export type { default as DetailContentCardSubtitleProps } from "./detailContentCardSubtitle";

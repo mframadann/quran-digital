@@ -7,3 +7,6 @@ export { default as QiraListCard } from "./qiraListCard";
 export { default as QiraListWrapper } from "./qiraList";
 export { default as ModalFooter } from "./modalFooter";
 export { default as Modal } from "./modalWrapper";
+export { default as DetailCardHeaderTitle } from "./detailHeaderCardTitle";
+export { default as DetailHeaderCardButton } from "./detailHeaderCardButton";
+export { default as DetailContentCardSubtitle } from "./detailContentCardSubtitle";

@@ -2,7 +2,7 @@ type BookIconProps = {
   className?: string;
 };
 
-const BookIcon = (props: BookIconProps): React.ReactNode => {
+const BookIcon = (props: BookIconProps) => {
   return (
     <svg
       width="13"

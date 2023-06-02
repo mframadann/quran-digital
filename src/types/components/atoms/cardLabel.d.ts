@@ -1,5 +1,5 @@
-type CardLabelProps = {
-  labelValue: number;
+type CardLabelProps<Type> = {
+  labelValue: Type;
   labelWidthType: "w-labelQira" | "w-label";
   labelHeightType: "h-labelQira" | "h-label";
 };

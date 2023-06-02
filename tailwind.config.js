@@ -26,7 +26,9 @@ module.exports = {
         searchFormDekstop: "22.5rem",
         searchFormMobile: "22.5rem",
         headerDetailCardDekstop: "19.375rem",
+        headerDetailCardMobile: "21.688",
         headerDetailCardOpeningDekstop: "34.75rem",
+        headerDetailCardOpeningMobile: "21.688",
         detailCardContentDekstop: "55.375rem",
         detailCardContentMobile: "21.688rem",
         modalDetailDekstop: "38.313rem",
@@ -44,6 +46,9 @@ module.exports = {
         modalPlayAudioMobile: "26.563rem",
         qiraListParent: "15.625rem",
       },
+      maxWidth: {
+        button: "4rem",
+      },
       height: {
         homepageCardDekstop: "6.25rem",
         homepageCardMobile: "6.25rem",
@@ -51,6 +56,7 @@ module.exports = {
         searchFormMobile: "3.25rem",
         headerDetailCardDekstop: "9.438rem",
         headerDetailCardOpeningDekstop: "9.438rem",
+        headerDetailCardOpeningMobile: "9.438rem",
         detailCardContentDekstop: "9.875rem",
         detailCardContentMobile: "9.875rem",
         modalDetailDekstop: "23.375rem",
