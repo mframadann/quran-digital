@@ -2,7 +2,7 @@ type PlayIconProps = {
   className?: string;
 };
 
-const PlayIcon = (props: PlayIconProps): React.ReactNode => {
+const PlayIcon = (props: PlayIconProps) => {
   return (
     <svg
       width="9"

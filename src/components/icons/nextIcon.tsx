@@ -2,7 +2,7 @@ type NextIconProps = {
   className?: string;
 };
 
-const NextIcon = (props: NextIconProps): React.ReactNode => {
+const NextIcon = (props: NextIconProps) => {
   return (
     <svg
       width="9"

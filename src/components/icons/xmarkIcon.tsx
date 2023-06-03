@@ -17,9 +17,9 @@ const XMarkIcon = (props: XMarkIconProps) => {
       <path
         d="M1 12L12 1M1 1L12 12"
         stroke="#858585"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

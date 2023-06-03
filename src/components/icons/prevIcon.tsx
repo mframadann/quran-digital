@@ -2,7 +2,7 @@ type PrevIconProps = {
   className?: string;
 };
 
-const PrevIcon = (props: PrevIconProps): React.ReactNode => {
+const PrevIcon = (props: PrevIconProps) => {
   return (
     <svg
       width="9"
