@@ -8,6 +8,7 @@ import {
   PlayModal,
 } from "../moleculs";
 import { Data } from "@/constans";
+import { NextIcon, PrevIcon } from "../icons";
 
 const ReadPagecomponent = () => {
   const [showDetail, setShowDetail] = useState(false);
@@ -41,6 +42,19 @@ const ReadPagecomponent = () => {
             translation={ayat.teksIndonesia}
           />
         ))}
+      </section>
+      <section className="w-full flex items-center justify-between pb-6 pt-2 px-4">
+        <button
+          className="bg-primary px-4 py-3 text-xs font-bold rounded-full text-white flex gap-2 items-center focus:ring-4 focus:ring-primary focus:ring-opacity-40 disabled:bg-opacity-50"
+          disabled={true}
+        >
+          <PrevIcon />
+          Sebelumnya
+        </button>
+        <button className="bg-primary px-4 py-3 text-xs font-bold rounded-full text-white flex gap-2 items-center focus:ring-4 focus:ring-primary focus:ring-opacity-40">
+          Selanjutnya
+          <NextIcon />
+        </button>
       </section>
     </div>
   );
