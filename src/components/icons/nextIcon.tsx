@@ -1,6 +1,4 @@
-type NextIconProps = {
-  className?: string;
-};
+import { NextIconProps } from "@/types/components";
 
 const NextIcon = (props: NextIconProps) => {
   return (

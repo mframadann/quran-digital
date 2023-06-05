@@ -1,7 +1,4 @@
-type XMarkIconProps = {
-  className?: string;
-  onClick?: () => void;
-};
+import { XMarkIconProps } from "@/types/components";
 
 const XMarkIcon = (props: XMarkIconProps) => {
   return (

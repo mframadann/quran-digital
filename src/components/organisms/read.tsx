@@ -14,7 +14,7 @@ const ReadPagecomponent = () => {
   const [showDetail, setShowDetail] = useState(false);
   const [showPlayList, setShowPlayList] = useState(false);
   return (
-    <div className="w-full h-full bg-secondary px-4 pt-28 flex flex-col gap-4">
+    <div className="w-full h-full px-4 pt-28 flex flex-col gap-4  max-w-7xl mx-auto">
       {showPlayList && (
         <PlayModal handleClick={(): void => setShowPlayList(!showPlayList)} />
       )}
@@ -24,7 +24,7 @@ const ReadPagecomponent = () => {
           letterName="Surat Al-Fatihah"
         />
       )}
-      <section className="w-full h-full px-2 box-border flex flex-col gap-4">
+      <section className="w-full h-full px-2 box-border flex flex-col gap-4 md:grid md:grid-flow-col">
         <DetailHeaderCard
           showDetailModal={(): void => setShowDetail(!showDetail)}
           showPlayModal={(): void => setShowPlayList(!showPlayList)}

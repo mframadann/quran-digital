@@ -1,6 +1,4 @@
-type PrevIconProps = {
-  className?: string;
-};
+import { PrevIconProps } from "@/types/components";
 
 const PrevIcon = (props: PrevIconProps) => {
   return (

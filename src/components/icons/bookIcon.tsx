@@ -1,6 +1,4 @@
-type BookIconProps = {
-  className?: string;
-};
+import { BookIconProps } from "@/types/components";
 
 const BookIcon = (props: BookIconProps) => {
   return (

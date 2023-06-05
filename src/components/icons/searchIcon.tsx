@@ -1,4 +1,6 @@
-const SearchIcon = (props: { className?: string }) => {
+import { SearchIconProps } from "@/types/components";
+
+const SearchIcon = (props: SearchIconProps) => {
   return (
     <svg
       width="21"

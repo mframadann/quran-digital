@@ -4,7 +4,7 @@ import { BookIcon, PlayIcon } from "../icons";
 
 const DetailHeaderCard = (props: DetailHeaderCardProps) => {
   return (
-    <div className="w-headerDetailCardMobile p-8 rounded-10 bg-white shadow-md shadow-[#7090b023] flex items-center">
+    <div className="w-headerDetailCardMobile p-8 rounded-10 bg-white shadow-md shadow-[#7090b023] flex items-center xl:w-full">
       <div className="flex flex-col gap-2">
         <DetailCardHeaderTitle />
         <div className="flex gap-2 ">

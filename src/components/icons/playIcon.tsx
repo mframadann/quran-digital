@@ -1,6 +1,4 @@
-type PlayIconProps = {
-  className?: string;
-};
+import { PlayIconProps } from "@/types/components";
 
 const PlayIcon = (props: PlayIconProps) => {
   return (

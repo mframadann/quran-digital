@@ -1,6 +1,8 @@
 import { CardLabelProps } from "@/types/components";
 
-const CardLabel = (props: CardLabelProps<string | number>) => {
+const CardLabel = (
+  props: CardLabelProps<string | number | React.ReactNode>
+) => {
   return (
     <div
       className={` ${
