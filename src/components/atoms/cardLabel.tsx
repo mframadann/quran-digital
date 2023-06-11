@@ -7,9 +7,9 @@ const CardLabel = (
     <div
       className={` ${
         props.labelHeightType + " " + props.labelWidthType
-      } rounded-5 bg-label  rotate-45 text-black flex items-center justify-center group-hover:bg-primary `}
+      } rounded-5  rotate-45 text-black flex items-center justify-center bg-primary `}
     >
-      <span className="-rotate-45 group-hover:font-bold group-hover:text-white text-xs">
+      <span className="-rotate-45 font-bold text-white text-xs">
         {props.labelValue}
       </span>
     </div>

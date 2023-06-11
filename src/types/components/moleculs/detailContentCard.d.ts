@@ -1,5 +1,5 @@
 type DetailContentCardProps = {
-  letterNumber: number | 0;
+  letterNumber: number | undefined;
   ayatNumber: number | 0;
   arabicText: string;
   latinText: string;

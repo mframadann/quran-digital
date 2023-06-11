@@ -1,6 +1,6 @@
 type DetailModalProps = {
   letterName: string;
-  letterBody?: string[];
+  letterBody?: string;
   handleClick?: () => void;
 };
 

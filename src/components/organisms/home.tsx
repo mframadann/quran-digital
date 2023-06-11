@@ -4,7 +4,7 @@ import { ContentCard } from "../moleculs";
 
 const HomePageComponent = (data: HomePageCompProps) => {
   return (
-    <div className="w-full max-w-7xl h-full bg- box-border p-4">
+    <div className="w-full max-w-7xl h-full bg- box-border p-4 mx-auto">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col md:flex-row md:justify-between md:items-end lg:flex-row lg:justify-between lg:items-end xl:flex-row gap-6 xl:justify-between xl:items-end">
           {/* Header */}
@@ -28,13 +28,9 @@ const HomePageComponent = (data: HomePageCompProps) => {
           {/* end searchbox */}
         </div>
         {/* content */}
-        <div className="w-full grid grid-flow-row grid-rows-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-3">
+        <div className="w-full grid grid-flow-row grid-rows-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-2">
           {data &&
-            data.data.map((data, i) => (
-              <>
-                <ContentCard key={i} data={data} />
-              </>
-            ))}
+            data.data.map((data, i) => <ContentCard key={i} data={data} />)}
         </div>
         {/* end content */}
       </div>

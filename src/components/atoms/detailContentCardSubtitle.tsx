@@ -6,8 +6,8 @@ const DetailContentCardSubtitle = (props: DetailContentCardSubtitleProps) => {
       <span className="text-xs italic text-ternary md:text-base">
         {props.latinText}
       </span>
-      <hr className="md:hidden" />
-      <span className="text-xs italic md:hidden">{props.translation}</span>
+      <hr />
+      <span className="text-xs italic md:text-base">{props.translation}</span>
     </div>
   );
 };

@@ -75,6 +75,9 @@ module.exports = {
       boxShadow: {
         card: "box-shadow: 0px 4px 15px 0px;",
       },
+      backgroundImage: {
+        home: "url('../public/images/background.webp')",
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 type DetailModalContentProps = {
-  children: HTMLBodyElement<HTMLHtmlElement>;
+  children: HTMLBodyElement<HTMLElement>;
 };
 
 export default DetailModalContentProps;

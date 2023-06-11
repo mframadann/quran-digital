@@ -1,9 +1,11 @@
-const DetailHeaderCardTitle = () => {
+import { DetailHeaderCardTitleProps } from "@/types/components";
+
+const DetailHeaderCardTitle = (props: DetailHeaderCardTitleProps) => {
   return (
     <div className="leading-3">
-      <h1 className="text-xl font-bold">Al-Fatihah</h1>
+      <h1 className="text-xl font-bold">{props.letterName}</h1>
       <span className="text-xs font-semibold text-ternary">
-        Pembuka - 7 Ayat - Mekah
+        {props.translation} - {props.ayatCount} Ayat - {props.droppedPlace}
       </span>
     </div>
   );
