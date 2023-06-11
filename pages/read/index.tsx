@@ -1,9 +1,7 @@
 "use client";
-import { ReadPagecomponent } from "@/components";
-import DetailLoading from "@/components/moleculs/DetailLoading";
+import { DetailLoading, ReadPagecomponent } from "@/components";
 import { GetLetterByNumber } from "@/services";
 import { LetterStateProps, ReadPageProps } from "@/types/pages";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -13,13 +11,12 @@ const DetailPage = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   const GetDetailLetterById = async () => {
+    setLoading(true);
     const response = await GetLetterByNumber({
       letterNumber: router.query.number,
     });
     setLetter(response);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -29,15 +26,11 @@ const DetailPage = () => {
   }, [router.isReady, router.query.number]);
 
   if (loading) {
-    return (
-      <main className="w-full bg-home">
-        <DetailLoading />
-      </main>
-    );
+    return <DetailLoading />;
   }
 
   return (
-    <main className="w-full h-[100vh] bg-home">
+    <main className="w-full h-[100vh] bg-white">
       <ReadPagecomponent
         ayat={letter?.ayat}
         nextLetter={letter?.suratSelanjutnya}
@@ -48,6 +41,7 @@ const DetailPage = () => {
         namaLatin={`${letter?.namaLatin}`}
         tempatTurun={`${letter?.tempatTurun}`}
         nomor={letter?.nomor}
+        audioFull={letter?.audioFull}
       />
     </main>
   );

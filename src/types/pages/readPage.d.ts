@@ -5,7 +5,15 @@ type ReadPageProps = {
   tempatTurun: string;
   nomor: number | undefined;
   deskripsi: string;
-
+  audioFull:
+    | {
+        "01": string;
+        "02": string;
+        "03": string;
+        "04": string;
+        "05": string;
+      }
+    | undefined;
   ayat:
     | {
         nomorAyat: number;

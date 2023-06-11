@@ -1,7 +1,7 @@
-export { default as PlayIcon } from "./playIcon";
-export { default as BookIcon } from "./bookIcon";
-export { default as XMarkIcon } from "./xmarkIcon";
-export { default as PrevIcon } from "./prevIcon";
-export { default as NextIcon } from "./nextIcon";
-export { default as SearchIcon } from "./searchIcon";
-export { default as CheckListIcon } from "./checkListIcon";
+export { default as PlayIcon } from "./play";
+export { default as BookIcon } from "./book";
+export { default as XMarkIcon } from "./xmark";
+export { default as PrevIcon } from "./prevIous";
+export { default as NextIcon } from "./next";
+export { default as SearchIcon } from "./search";
+export { default as CheckListIcon } from "./checkList";

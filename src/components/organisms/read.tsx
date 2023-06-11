@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   DetailCardOpening,
   DetailContentCard,
@@ -9,17 +9,55 @@ import {
 import { NextIcon, PrevIcon } from "../icons";
 import { ReadPageProps } from "@/types/pages";
 import { useRouter } from "next/router";
-import Link from "next/link";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ReadPagecomponent = (props: ReadPageProps) => {
   const [showDetail, setShowDetail] = useState(false);
   const [showPlayList, setShowPlayList] = useState(false);
+  const [audio, setAudio] = useState<string>();
+  const audioRef = useRef(null);
   const router = useRouter();
+
+  useEffect(() => {
+    const audioElement: any = audioRef.current;
+
+    const handlePlay = () => {
+      const durationInSeconds = audioElement?.duration;
+      const durationInMilliseconds = durationInSeconds * 1000;
+
+      toast("🎧 Mendengarkan: Surat Al-Fatihah", {
+        autoClose: durationInMilliseconds,
+        onClose: handleToastClose,
+        position: "top-center",
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    };
+    audioElement?.addEventListener("play", handlePlay);
+    return () => {
+      audioElement.removeEventListener("play", handlePlay);
+    };
+  }, [audio]);
+
+  const handleToastClose = () => {
+    console.log("Toast closed");
+  };
 
   return (
     <div className="w-full h-full px-4 pt-28 flex flex-col gap-4  max-w-7xl mx-auto">
+      <audio src={audio} ref={audioRef} autoPlay={true}></audio>
+      <ToastContainer />
       {showPlayList && (
-        <PlayModal handleClick={(): void => setShowPlayList(!showPlayList)} />
+        <PlayModal
+          handleClick={(): void => setShowPlayList(!showPlayList)}
+          audioFull={props.audioFull}
+          setAudio={setAudio}
+        />
       )}
       {showDetail && (
         <DetailModal
@@ -31,7 +69,9 @@ const ReadPagecomponent = (props: ReadPageProps) => {
       <section className="w-full h-full px-2 box-border flex flex-col gap-4 md:grid md:grid-flow-col">
         <DetailHeaderCard
           showDetailModal={(): void => setShowDetail(!showDetail)}
-          showPlayModal={(): void => setShowPlayList(!showPlayList)}
+          showPlayModal={(): void => {
+            setShowPlayList(!showPlayList);
+          }}
           ayatCount={props?.jumlahAyat}
           droppedPlace={props?.tempatTurun}
           letterName={props?.namaLatin}

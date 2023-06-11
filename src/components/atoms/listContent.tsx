@@ -1,5 +1,5 @@
 import { QiraListCardProps } from "@/types/components";
-import CardLabel from "./cardLabel";
+import CardLabel from "./letterLabel";
 
 const QiraListCard = (props: QiraListCardProps) => {
   return (
